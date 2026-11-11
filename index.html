@@ -1,0 +1,440 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VELOCITY | Bicycle Store</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYr2P0Hg1gHXL5ukYopQ0y51pQPxOfO_w9vCKpN0hSTQ&s=10">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <h2>VELOCITY</h2>
+            <p>Preparing your ride...</p>
+            <div class="loading-line">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+<header>
+    <nav class="navbar">
+        <a href="#" class="logo">VELO<span>CITY.</span></a>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bikes">Bicycles</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <button class="cart-btn" id="cartButton">🛒 <span id="cartCount">0</span></button>
+            <a href="#bikes" class="nav-buy">Shop Now ↗</a>
+        </div>
+    </nav>
+</header>
+<section class="hero" id="home">
+    <div class="hero-content">
+        <span class="small-title">RIDE YOUR OWN WAY</span>
+        <h1>DISCOVER THE <span>FREEDOM</span><br>OF RIDING.</h1>
+        <p>Explore the world with premium bicycles. Experience speed, freedom and adventure with VELOCITY.</p>
+        <div class="hero-buttons">
+            <a href="#bikes" class="primary-btn">Explore Bikes ↗</a>
+            <a href="#about" class="secondary-btn">Discover More</a>
+        </div>
+        <div class="hero-stats">
+            <div><h2>25K+</h2><p>Happy Riders</p></div>
+            <div><h2>150+</h2><p>Bike Models</p></div>
+            <div><h2>12+</h2><p>Years Experience</p></div>
+        </div>
+    </div>
+    <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?w=1200" alt="Premium bicycle">
+        <div class="image-label">
+            <span>NEW COLLECTION</span>
+            <h3>Mountain X-900</h3>
+            <p>Designed for adventure.</p>
+        </div>
+    </div>
+    <div class="hero-number">01 / 04</div>
+</section>
+
+<section class="brands">
+    <p>TRUSTED BY RIDERS WORLDWIDE</p>
+    <div class="brand-list">
+        <span>TREK</span>
+        <span>SPECIALIZED</span>
+        <span>GIANT</span>
+        <span>CANNONDALE</span>
+        <span>SCOTT</span>
+    </div>
+</section>
+
+<section class="section bikes-section" id="bikes">
+    <div class="section-heading">
+        <div>
+            <span class="small-title">OUR COLLECTION</span>
+            <h2>CHOOSE YOUR <span>RIDE.</span></h2>
+        </div>
+        <p>Find the perfect bicycle for your next adventure.</p>
+    </div>
+
+    <div class="filter-buttons">
+        <button class="filter active" data-filter="all">All Bikes</button>
+        <button class="filter" data-filter="mountain">Mountain</button>
+        <button class="filter" data-filter="road">Road</button>
+        <button class="filter" data-filter="electric">Electric</button>
+    </div>
+
+    <div class="products">
+
+        <div class="product-card" data-category="mountain">
+            <div class="product-image">
+                <span class="tag">BESTSELLER</span>
+                <img src="https://www.cobaltbike.com/cdn/shop/files/Cobalt_Thunderbolt_Bike_in_the_Sonoran_Desert.png?v=1791820054&width=3840" alt="Mountain bicycle">
+                <button class="quick-view">Premium Quality</button>
+            </div>
+            <div class="product-info">
+                <span>MOUNTAIN BIKE</span>
+                <h3>Mountain X-900</h3>
+                <div class="product-bottom">
+                    <h4>$899</h4>
+                    <button class="add-cart" data-name="Mountain X-900" data-price="899">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="road">
+            <div class="product-image">
+                <span class="tag new">NEW</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1iH8r-A-MCWPGOexDUV-9qmCLspaxM3oOMr-3eVLkdw&s=10" alt="Road bicycle">
+                <button class="quick-view">Premium Quality</button>
+            </div>
+            <div class="product-info">
+                <span>ROAD BIKE</span>
+                <h3>Road Pro Carbon</h3>
+                <div class="product-bottom">
+                    <h4>$1,299</h4>
+                    <button class="add-cart" data-name="Road Pro Carbon" data-price="1299">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="electric">
+            <div class="product-image">
+                <span class="tag">POPULAR</span>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQONe2IJc63IBwU4AU4haQPvgYisZGl5ZpAEDhBz8MnbQ&s=10" alt="Electric bicycle">
+                <button class="quick-view">Premium Quality</button>
+            </div>
+            <div class="product-info">
+                <span>ELECTRIC BIKE</span>
+                <h3>Electric Storm E7</h3>
+                <div class="product-bottom">
+                    <h4>$1,799</h4>
+                    <button class="add-cart" data-name="Electric Storm E7" data-price="1799">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="mountain">
+            <div class="product-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEVlt_zmaAjW-G8ul1YwHXMnpy4ru4jWrJxFa9IxGjtU6jUBZxw0Tbfyd2&s=10" alt="Mountain bicycle">
+                <button class="quick-view">Premium Quality</button>
+            </div>
+            <div class="product-info">
+                <span>MOUNTAIN BIKE</span>
+                <h3>Trail Master 500</h3>
+                <div class="product-bottom">
+                    <h4>$749</h4>
+                    <button class="add-cart" data-name="Trail Master 500" data-price="749">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="road">
+            <div class="product-image">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7XZLxlIR7kRLlmGv33J4dDcs69yOeoGMyJdyV0R8mWPFEQlpLdPSXjns&s=10" alt="Road bicycle">
+                <button class="quick-view">Premium Quality</button>
+            </div>
+            <div class="product-info">
+                <span>ROAD BIKE</span>
+                <h3>Speedster R5</h3>
+                <div class="product-bottom">
+                    <h4>$999</h4>
+                    <button class="add-cart" data-name="Speedster R5" data-price="999">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-card" data-category="electric">
+            <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?w=800" alt="Electric bicycle">
+                <button class="quick-view">Premium Quality</button>
+            </div>
+            <div class="product-info">
+                <span>ELECTRIC BIKE</span>
+                <h3>Volt Explorer X</h3>
+                <div class="product-bottom">
+                    <h4>$2,199</h4>
+                    <button class="add-cart" data-name="Volt Explorer X" data-price="2199">+</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="adventure" id="about">
+    <div class="adventure-image">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtIPD6r31MMzuo5g6sFY7M78pBdRfEmIKlTkjRYOtZmQ&s=10" alt="Cycling adventure">
+    </div>
+    <div class="adventure-content">
+        <span class="small-title">MORE THAN A BICYCLE</span>
+        <h2>EVERY RIDE<br>IS A NEW <span>STORY.</span></h2>
+        <p>We believe cycling is more than transportation. It's a lifestyle, a passion and a way to discover the world.</p>
+        <div class="feature">
+            <span>01</span>
+            <div><h3>Premium Quality</h3><p>Carefully selected materials and advanced technology.</p></div>
+        </div>
+        <div class="feature">
+            <span>02</span>
+            <div><h3>Modern Design</h3><p>Beautiful bicycles made for every adventure.</p></div>
+        </div>
+        <div class="feature">
+            <span>03</span>
+            <div><h3>Best Performance</h3><p>Comfort, speed and reliability in every ride.</p></div>
+        </div>
+        <a href="#services" class="primary-btn">Learn More ↗</a>
+    </div>
+</section>
+
+<section class="categories section">
+    <div class="section-heading">
+        <div>
+            <span class="small-title">FIND YOUR STYLE</span>
+            <h2>EXPLORE <span>CATEGORIES.</span></h2>
+        </div>
+    </div>
+    <div class="category-grid">
+        <div class="category-card">
+            <img src="photo_5449519716113260257_y.jpg" alt="Mountain">
+            <div><span>01 / ADVENTURE</span><h3>Mountain Bikes</h3><a href="#bikes">Explore ↗</a></div>
+        </div>
+        <div class="category-card">
+            <img src="photo_5449519716113260266_y.jpg" alt="Road">
+            <div><span>02 / SPEED</span><h3>Road Bikes</h3><a href="#bikes">Explore ↗</a></div>
+        </div>
+        <div class="category-card">
+            <img src="photo_5449519716113260256_x.jpg" alt="Electric">
+            <div><span>03 / FUTURE</span><h3>Electric Bikes</h3><a href="#bikes">Explore ↗</a></div>
+        </div>
+    </div>
+</section>
+
+
+<section class="reviews" id="reviews">
+    <div class="reviews-heading">
+        <span class="small-title">CUSTOMER REVIEWS</span>
+        <h2>WHAT OUR <span>CUSTOMERS</span><br>SAY ABOUT US.</h2>
+        <p>Real experiences from people who love riding with VELOCITY.</p>
+    </div>
+
+    <div class="reviews-grid">
+
+        <div class="review-card">
+            <div class="review-top">
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200" alt="Customer">
+                <div>
+                    <h3>James Wilson</h3>
+                    <span>Professional Cyclist</span>
+                </div>
+                <div class="quote">“</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Absolutely amazing bicycle! The quality, design and performance are incredible. I use it every day and couldn't be happier."</p>
+            <div class="review-bottom">
+                <span>VERIFIED CUSTOMER</span>
+                <span>★★★★★</span>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-top">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=200" alt="Customer">
+                <div>
+                    <h3>Emma Johnson</h3>
+                    <span>Adventure Lover</span>
+                </div>
+                <div class="quote">“</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"I bought my first mountain bike here. The delivery was fast and the bicycle looks even better in real life. Highly recommended!"</p>
+            <div class="review-bottom">
+                <span>VERIFIED CUSTOMER</span>
+                <span>★★★★★</span>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-top">
+                <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=200" alt="Customer">
+                <div>
+                    <h3>Daniel Smith</h3>
+                    <span>Road Bike Rider</span>
+                </div>
+                <div class="quote">“</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"The Road Pro Carbon is fantastic. Lightweight, fast and comfortable. VELOCITY offers some of the best bicycles I have ever seen."</p>
+            <div class="review-bottom">
+                <span>VERIFIED CUSTOMER</span>
+                <span>★★★★★</span>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-top">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200" alt="Customer">
+                <div>
+                    <h3>Sophia Miller</h3>
+                    <span>Fitness Enthusiast</span>
+                </div>
+                <div class="quote">“</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Great customer service and beautiful products. My new bicycle has made my daily rides much more enjoyable."</p>
+            <div class="review-bottom">
+                <span>VERIFIED CUSTOMER</span>
+                <span>★★★★★</span>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-top">
+                <img src="https://images.unsplash.com/photo-1504593811423-6dd665756598?w=200" alt="Customer">
+                <div>
+                    <h3>Michael Brown</h3>
+                    <span>Mountain Rider</span>
+                </div>
+                <div class="quote">“</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Perfect bicycle for mountain adventures. Strong frame, excellent brakes and an amazing riding experience."</p>
+            <div class="review-bottom">
+                <span>VERIFIED CUSTOMER</span>
+                <span>★★★★★</span>
+            </div>
+        </div>
+
+        <div class="review-card">
+            <div class="review-top">
+                <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=200" alt="Customer">
+                <div>
+                    <h3>Olivia Davis</h3>
+                    <span>City Cyclist</span>
+                </div>
+                <div class="quote">“</div>
+            </div>
+            <div class="stars">★★★★★</div>
+            <p>"Beautiful design and very comfortable to ride. I absolutely love my new bike. Thank you VELOCITY!"</p>
+            <div class="review-bottom">
+                <span>VERIFIED CUSTOMER</span>
+                <span>★★★★★</span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="reviews-summary">
+        <div>
+            <h2>4.9<span>/5</span></h2>
+            <div class="stars">★★★★★</div>
+            <p>Customer Satisfaction</p>
+        </div>
+        <div>
+            <h2>2,500+</h2>
+            <p>Happy Customers</p>
+        </div>
+        <div>
+            <h2>98%</h2>
+            <p>Positive Reviews</p>
+        </div>
+    </div>
+</section>
+
+<section class="services section" id="services">
+    <div class="section-heading">
+        <div>
+            <span class="small-title">WHY VELOCITY?</span>
+            <h2>WE CARE ABOUT <span>YOUR RIDE.</span></h2>
+        </div>
+    </div>
+    <div class="service-grid">
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-bicycle"></i> </div><h3>Free Delivery</h3><p>Fast and safe delivery directly to your door.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-brands fa-audible"></i></div><h3>Expert Service</h3><p>Professional maintenance and bicycle repair.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-solid fa-shield-halved"></i></div><h3>Warranty</h3><p>Quality products with reliable warranty.</p></div>
+        <div class="service-card"><div class="service-icon"><i class="fa-regular fa-message"></i></div><h3>24/7 Support</h3><p>Our team is always ready to help you.</p></div>
+    </div>
+</section>
+
+<section class="review">
+    <span class="small-title">CUSTOMER STORIES</span>
+    <h2>"THE BEST RIDE<br>STARTS <span>HERE."</span></h2>
+    <p>★★★★★</p>
+    <h3>Alex Morgan</h3>
+    <span>Professional Cyclist</span>
+</section>
+
+<section class="newsletter">
+    <div>
+        <span class="small-title">STAY CONNECTED</span>
+        <h2>JOIN THE <span>RIDE.</span></h2>
+        <p>Get updates about new bikes, exclusive offers and cycling adventures.</p>
+    </div>
+    <form id="newsletterForm">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit">Subscribe ↗</button>
+    </form>
+</section>
+
+<footer id="contact">
+    <div class="footer-top">
+        <div class="footer-brand">
+            <a href="#" class="logo">VELO<span>CITY.</span></a>
+            <p>Ride beyond limits. Discover your freedom with VELOCITY.</p>
+        </div>
+        <div><h3>Explore</h3><a href="#home">Home</a><a href="#bikes">Bicycles</a><a href="#about">About Us</a></div>
+        <div><h3>Services</h3><a href="#services">Delivery</a><a href="#services">Repair</a><a href="#services">Warranty</a></div>
+        <div><h3>Contact</h3><a href="mailto:hello@velocity.com">hello@velocity.com</a><a href="#">Instagram</a><a href="#">Telegram</a></div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 VELOCITY. All Rights Reserved.</p>
+        <p>DESIGNED FOR RIDERS. 🚴</p>
+    </div>
+</footer>
+
+<div class="cart-overlay" id="cartOverlay">
+    <div class="cart-panel">
+        <div class="cart-header">
+            <h2>YOUR CART</h2>
+            <button id="closeCart">✕</button>
+        </div>
+        <div id="cartItems"></div>
+        <div class="cart-total">
+            <h3>Total: <span id="cartTotal">$0</span></h3>
+            <button id="checkout">Checkout ↗</button>
+        </div>
+    </div>
+</div>
+
+<script src="sript.js"></script>
+</body>
+</html>
